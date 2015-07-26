@@ -1,0 +1,7 @@
+C:\Users\David\documents\visual studio 2013\Projects\ConsoleApplication3\C_Sharp_Examples_Tests\bin\Debug\C_Sharp_Examples_Tests.dll
+C:\Users\David\documents\visual studio 2013\Projects\ConsoleApplication3\C_Sharp_Examples_Tests\bin\Debug\C_Sharp_Examples_Tests.pdb
+C:\Users\David\documents\visual studio 2013\Projects\ConsoleApplication3\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests.csprojResolveAssemblyReference.cache
+C:\Users\David\documents\visual studio 2013\Projects\ConsoleApplication3\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests.dll
+C:\Users\David\documents\visual studio 2013\Projects\ConsoleApplication3\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests.pdb
+C:\Users\David\documents\visual studio 2013\Projects\ConsoleApplication3\C_Sharp_Examples_Tests\bin\Debug\ConsoleApplication3.exe
+C:\Users\David\documents\visual studio 2013\Projects\ConsoleApplication3\C_Sharp_Examples_Tests\bin\Debug\ConsoleApplication3.pdb
