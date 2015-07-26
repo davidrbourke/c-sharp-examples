@@ -60,7 +60,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApplication3\C_Sharp_Examples.csproj">
+    <ProjectReference Include="..\C_Sharp_Examples\C_Sharp_Examples.csproj">
       <Project>{a2dc01ea-ec5a-46bc-a758-5e620b5fe3a8}</Project>
       <Name>C_Sharp_Examples</Name>
     </ProjectReference>

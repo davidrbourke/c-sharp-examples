@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Examples", "ConsoleApplication3\C_Sharp_Examples.csproj", "{A2DC01EA-EC5A-46BC-A758-5E620B5FE3A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Examples", "C_Sharp_Examples\C_Sharp_Examples.csproj", "{A2DC01EA-EC5A-46BC-A758-5E620B5FE3A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Examples_Tests", "C_Sharp_Examples_Tests\C_Sharp_Examples_Tests.csproj", "{5F386931-6854-428F-BA8D-5D381E39E7E3}"
 EndProject

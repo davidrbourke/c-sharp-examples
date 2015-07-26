@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ConsoleApplication3;
 using System.Collections.Generic;
+using ConsoleApplication3;
 
 namespace C_Sharp_Examples_Tests
 {

@@ -7,8 +7,8 @@
     <ProjectGuid>{A2DC01EA-EC5A-46BC-A758-5E620B5FE3A8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication3</RootNamespace>
-    <AssemblyName>ConsoleApplication3</AssemblyName>
+    <RootNamespace>C_Sharp_Examples</RootNamespace>
+    <AssemblyName>C_Sharp_Examples</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -47,6 +47,11 @@
     <Compile Include="DesignPatterns\AdapterPattern\IDuck.cs" />
     <Compile Include="DesignPatterns\AdapterPattern\Turkey.cs" />
     <Compile Include="DesignPatterns\AdapterPattern\TurkeyAdapter.cs" />
+    <Compile Include="DesignPatterns\FacadePattern\Amplifier.cs" />
+    <Compile Include="DesignPatterns\FacadePattern\CdPlayer.cs" />
+    <Compile Include="DesignPatterns\FacadePattern\DvdPlayer.cs" />
+    <Compile Include="DesignPatterns\FacadePattern\HomeTheatreFacade.cs" />
+    <Compile Include="DesignPatterns\FacadePattern\Tunner.cs" />
     <Compile Include="LiskovSubsitutionPrinciple.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
