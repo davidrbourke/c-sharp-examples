@@ -52,6 +52,9 @@
     <Compile Include="DesignPatterns\FacadePattern\DvdPlayer.cs" />
     <Compile Include="DesignPatterns\FacadePattern\HomeTheatreFacade.cs" />
     <Compile Include="DesignPatterns\FacadePattern\Tunner.cs" />
+    <Compile Include="DesignPatterns\TemplatePattern\BeverageTemplate.cs" />
+    <Compile Include="DesignPatterns\TemplatePattern\Coffee.cs" />
+    <Compile Include="DesignPatterns\TemplatePattern\Tea.cs" />
     <Compile Include="LiskovSubsitutionPrinciple.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

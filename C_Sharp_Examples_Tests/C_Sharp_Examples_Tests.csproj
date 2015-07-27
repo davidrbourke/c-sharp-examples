@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="CaseFormatterTests.cs" />
     <Compile Include="DesignPatterns\AdapterPatternTests.cs" />
+    <Compile Include="DesignPatterns\TemplatePatternTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BitManipulationTests.cs" />
     <Compile Include="LiskovSubstitutionPrincipleTests.cs" />
