@@ -4,9 +4,3 @@ C:\Users\David\documents\visual studio 2013\Projects\ConsoleApplication3\Console
 C:\Users\David\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
 C:\Users\David\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
 C:\Users\David\Documents\Visual Studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\obj\Debug\C_Sharp_Examples.csprojResolveAssemblyReference.cache
-C:\Users\David\Documents\Visual Studio 2013\Projects\C_Sharp_Examples\C_Sharp_Examples\bin\Debug\C_Sharp_Examples.exe.config
-C:\Users\David\Documents\Visual Studio 2013\Projects\C_Sharp_Examples\C_Sharp_Examples\bin\Debug\C_Sharp_Examples.exe
-C:\Users\David\Documents\Visual Studio 2013\Projects\C_Sharp_Examples\C_Sharp_Examples\bin\Debug\C_Sharp_Examples.pdb
-C:\Users\David\Documents\Visual Studio 2013\Projects\C_Sharp_Examples\C_Sharp_Examples\obj\Debug\C_Sharp_Examples.exe
-C:\Users\David\Documents\Visual Studio 2013\Projects\C_Sharp_Examples\C_Sharp_Examples\obj\Debug\C_Sharp_Examples.pdb
-C:\Users\David\Documents\Visual Studio 2013\Projects\C_Sharp_Examples\C_Sharp_Examples\obj\Debug\C_Sharp_Examples.csprojResolveAssemblyReference.cache

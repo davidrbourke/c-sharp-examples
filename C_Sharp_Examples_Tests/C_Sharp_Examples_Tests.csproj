@@ -57,6 +57,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BitManipulationTests.cs" />
     <Compile Include="LiskovSubstitutionPrincipleTests.cs" />
+    <Compile Include="EqualityTests.cs" />
+    <Compile Include="ConstructorExamplesTests.cs" />
+    <Compile Include="DelegateExampleTests.cs" />
+    <Compile Include="LinqExamplesTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
