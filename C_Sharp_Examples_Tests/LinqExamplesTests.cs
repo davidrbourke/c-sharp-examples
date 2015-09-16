@@ -34,5 +34,13 @@ namespace C_Sharp_Examples_Tests
             LinqExamples example = new LinqExamples();
             example.LinqToSqlSample();
         }
+        
+        [TestMethod]
+        public void LingGrouping()
+        {
+            LinqExamples example = new LinqExamples();
+            example.UsingInto();
+
+        }
     }
 }

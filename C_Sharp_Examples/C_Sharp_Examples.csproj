@@ -78,6 +78,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="YieldExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
