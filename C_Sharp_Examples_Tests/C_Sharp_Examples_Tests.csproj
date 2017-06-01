@@ -45,7 +45,9 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
@@ -55,6 +57,7 @@
     <Compile Include="DesignPatterns\AdapterPatternTests.cs" />
     <Compile Include="DesignPatterns\TemplatePatternTests.cs" />
     <Compile Include="DesignPatterns\IteratorPatternTests.cs" />
+    <Compile Include="InterviewSamples\CakeThiefUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BitManipulationTests.cs" />
     <Compile Include="LiskovSubstitutionPrincipleTests.cs" />

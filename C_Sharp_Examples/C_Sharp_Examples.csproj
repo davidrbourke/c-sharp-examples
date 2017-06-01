@@ -70,6 +70,7 @@
       <DependentUpon>EmployeesDatabase.dbml</DependentUpon>
     </Compile>
     <Compile Include="Equality.cs" />
+    <Compile Include="InterviewSamples\CakeThief.cs" />
     <Compile Include="LinqExamples.cs" />
     <Compile Include="LiskovSubsitutionPrinciple.cs" />
     <Compile Include="Program.cs" />
