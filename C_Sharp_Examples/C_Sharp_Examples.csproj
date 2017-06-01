@@ -45,6 +45,7 @@
     <Compile Include="BitManipulation.cs" />
     <Compile Include="CaseFormatter.cs" />
     <Compile Include="ConstructorExamples.cs" />
+    <Compile Include="Cypher.cs" />
     <Compile Include="DelegateExample.cs" />
     <Compile Include="DesignPatterns\AdapterPattern\Duck.cs" />
     <Compile Include="DesignPatterns\AdapterPattern\IDuck.cs" />
