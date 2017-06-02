@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 // Import of static methods from a classs
 using static C_Sharp_Examples.SampleForStaticImport;
 
 namespace C_Sharp_Examples
 {
+    // All information from https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6
     public class CSharp6Features
     {
         public string FirstName { get; }
@@ -60,15 +59,85 @@ namespace C_Sharp_Examples
         }
 
         // Exception Filters
+        // A 'when' clause can be added to handle a specific exception, anything available can exception
+        // can go into the 'when' clause.
+        // The advantage of this over handling the logic in the catch and re-throwing, is that the stack trace
+        // will now show the real source of the error.
+        /*
+            catch (FileNotFoundException e) 
+            {
+                if (e.FileName == @"C:\doesnotexist.txt")
+                    return "File not found";
+                else
+                    throw; // the exception in this way comes from this line in the stack trace
+            } 
+        */
+        public string FileExceptionFilter(string pathFilename)
+        {
+            try
+            {
+                using (FileStream f = File.Open(pathFilename, FileMode.Open, FileAccess.Read, FileShare.None))
+                {
+                }
+            }
+            catch (FileNotFoundException e) when (e.FileName == @"C:\doesnotexist.txt")
+            {
+                return "File not found";
+            }
 
+            return string.Empty;
+        }
 
+        public string FileExceptionFilterLogging(string pathFilename)
+        {
+            try
+            {
+                using (FileStream f = File.Open(pathFilename, FileMode.Open, FileAccess.Read, FileShare.None))
+                {
+                }
+            }
+            catch (Exception e) when (e.LogException())
+            {
+                // This will never exception
+            }
+            catch (FileNotFoundException fe)
+            {
+                // This one will be hit though...this scenario is unusual because a less specific handler is excecuted before a more specific one
+            }
+
+            return string.Empty;
+        }
+        
+        // nameof Expression: this returns the name of an obejct
+        public string NameofExample(string itemName)
+        {
+            if (string.IsNullOrWhiteSpace(itemName))
+            {
+                return $"Not provided: {nameof(itemName)}";
+            }
+
+            return string.Empty;
+        }
+
+        // Index initializer on Dictionary and other similar types
+        public void IndexInitialiseADictionary()
+        {
+            var webErrors = new Dictionary<int, string>
+            {
+                [404] = "Page not found",
+                [302] = "Page moved",
+                [500] = "Server error...."
+            };
+        }
+
+        // Also extension Add methods in collection initialisers
+        // See: https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#index-initializers
     }
 
     public static class SampleForStaticImport
     {
         public static void DoSomethingAsStatic()
         {
-            
         }
 
         public static string ExensionMethodSample(this string str)
@@ -81,5 +150,14 @@ namespace C_Sharp_Examples
     {
         public string FirstName { get; set; }
         public int Age { get; set; }
+    }
+
+    public static class Logger
+    {
+        public static bool LogException(this Exception e)
+        {
+            // Do some logging...
+            return false;
+        }
     }
 }

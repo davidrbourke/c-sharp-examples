@@ -25,7 +25,6 @@ namespace C_Sharp_Examples
                         encryptedSubject = encyptionMemoryStream.ToArray();
                     }
                 }
-
             }
 
             return encryptedSubject;
