@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 
 namespace C_Sharp_Examples
 {
-    public class Cypher
+    public class Encryption
     {
         public byte[] EncryptAes(string subjectToEncrypt, byte[] key, byte[] IV)
         {

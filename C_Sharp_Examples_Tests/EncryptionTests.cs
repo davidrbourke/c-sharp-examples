@@ -5,13 +5,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace C_Sharp_Examples_Tests
 {
     [TestClass]
-    public class CypherTests
+    public class EncryptionTests
     {
         [TestMethod]
         public void EncryptAes_StringProvided_ByteArrayReturned()
         {
             // ARRANGE
-            Cypher c = new Cypher();
+            Encryption c = new Encryption();
             Aes aes = Aes.Create();
 
             // ACT
@@ -25,7 +25,7 @@ namespace C_Sharp_Examples_Tests
         public void EncryptAes_StringProvided_StringEncrypted()
         {
             // ARRANGE
-            Cypher c = new Cypher();
+            Encryption c = new Encryption();
             Aes aes = Aes.Create();
             var encryptedByteArray = c.EncryptAes("Hello world!", aes.Key, aes.IV);
 
@@ -40,7 +40,7 @@ namespace C_Sharp_Examples_Tests
         public void EncryptAes_SameKeySameIV_SameByteEncription()
         {
             // ARRANGE
-            Cypher c = new Cypher();
+            Encryption c = new Encryption();
             Aes aes = Aes.Create();
 
             // ACT
@@ -56,7 +56,7 @@ namespace C_Sharp_Examples_Tests
         public void EncryptAes_SameKeyDifferentIV_DifferentByteEncription()
         {
             // ARRANGE
-            Cypher c = new Cypher();
+            Encryption c = new Encryption();
             Aes aes = Aes.Create();
             Aes aesB = Aes.Create();
 
@@ -75,7 +75,7 @@ namespace C_Sharp_Examples_Tests
             // This test is to demonstrate that the same key can be used with a different Initialization Vector
 
             // ARRANGE
-            Cypher c = new Cypher();
+            Encryption c = new Encryption();
             Aes aes = Aes.Create();
             Aes aesB = Aes.Create();
 
