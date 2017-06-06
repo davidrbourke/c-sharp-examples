@@ -66,6 +66,7 @@
     <Compile Include="DelegateExampleTests.cs" />
     <Compile Include="LinqExamplesTests.cs" />
     <Compile Include="CSharp6FeaturesTests.cs" />
+    <Compile Include="CSharp7FeaturesTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

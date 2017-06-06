@@ -9,6 +9,7 @@ namespace C_Sharp_Examples
     // All information from https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6
     public class CSharp6Features
     {
+        // Proper readonly properties
         public string FirstName { get; }
         // Old: public string FirstName { get; private set; }
         // This get can only be in the constructor now.
@@ -25,7 +26,7 @@ namespace C_Sharp_Examples
         // Where an expression consists of only one statement:
         public string FullName => $"{FirstName } 23";
 
-        // Using static method in another class
+        // Using static method in another class: Static using statement - see the top of the file for 'using static'
         public void ExecuteAStaticMethodWithoutNamespace()
         {
             DoSomethingAsStatic();
@@ -59,7 +60,7 @@ namespace C_Sharp_Examples
         }
 
         // Exception Filters
-        // A 'when' clause can be added to handle a specific exception, anything available can exception
+        // A 'when' clause can be added to handle a specific exception, anything available in the exception
         // can go into the 'when' clause.
         // The advantage of this over handling the logic in the catch and re-throwing, is that the stack trace
         // will now show the real source of the error.

@@ -12,3 +12,4 @@ C:\DEVP\C_Sharp_Examples\C_Sharp_Examples_Tests\bin\Debug\C_Sharp_Examples.pdb
 C:\DEVP\C_Sharp_Examples\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests.csprojResolveAssemblyReference.cache
 C:\DEVP\C_Sharp_Examples\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests.dll
 C:\DEVP\C_Sharp_Examples\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests.pdb
+C:\DEVP\C_Sharp_Examples\C_Sharp_Examples_Tests\bin\Debug\System.ValueTuple.dll
