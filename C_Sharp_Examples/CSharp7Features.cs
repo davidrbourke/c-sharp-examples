@@ -1,4 +1,7 @@
 ﻿// Examples taken from https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7
+
+using System;
+
 namespace C_Sharp_Examples
 {
     // In VS2015 the nuget package Microsoft.Net.Compilers must be installed
@@ -72,8 +75,41 @@ namespace C_Sharp_Examples
         }
 
 
-        // Ref locals and returns TODO
+        // Ref locals and return
+        // ref - a reference to an object can be returned from anywhere in a method.
+        // In the example, when the matrix object is found, a reference to the int is returned
+        // so in UsingFind, when the valItem is updated, the object in the matrix is 
+        // actually updated. 
+        // Note there are 4 uses of the ref keyword for safety
+        // 1. The Find method
+        // 2. when returing the foudn int
+        // 3. In UsingFind when making the method call
+        // 4. In UsingFind when declaring the variable to hold the result of the ref method call.
+        public ref int Find(int[,] matrix, Func<int, bool> predicate)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (predicate(matrix[i, j]))
+                        return ref matrix[i, j];
+                }
+            }
+           throw new InvalidOperationException("Not found");
+        }
 
+        public void UsingFind()
+        {
+            int[,] matrix = new int[3,3];
+            for (int i = 0; i < matrix.GetLength(0); i++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                    matrix[i, j] = i + j;
+
+            ref var valItem = ref this.Find(matrix, val => val == 4);
+            valItem = 5;
+            int updatedReferenceValue = matrix[2, 2];
+
+        }
     }
     // The Deconstruct method can be used to assign the output of a method to a tuple using the out
     // and Deconstruct keyword

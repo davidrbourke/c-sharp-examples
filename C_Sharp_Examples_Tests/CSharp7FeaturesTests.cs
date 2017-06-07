@@ -29,5 +29,15 @@ namespace C_Sharp_Examples_Tests
             // Act
             features.TuplesExample();
         }
+
+        [TestMethod]
+        public void UsingFind_()
+        {
+            // Arrange
+            CSharp7Features features = new CSharp7Features();
+
+            // Act
+            features.UsingFind();
+        }
     }
 }
