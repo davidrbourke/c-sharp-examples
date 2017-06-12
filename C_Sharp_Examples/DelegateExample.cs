@@ -16,17 +16,17 @@ namespace C_Sharp_Examples
         {
             Manager manager = new Manager();
             // Create a new instance of the delegate and pass in the function handler
-            WorkPerformanceHandler handler = new WorkPerformanceHandler(manager.Manager_WorkPerformed);
+            WorkPerformanceHandler handler = new WorkPerformanceHandler(manager.ManagerWorkPerformed);
 
             Employee employee = new Employee();
-            handler += new WorkPerformanceHandler(employee.Employee_WorkPerformed);
+            handler += new WorkPerformanceHandler(employee.EmployeeWorkPerformed);
 
             // Anonymous method can also be used as handler for a delegate
             handler += delegate(int hours, string workType) { return hours + 3; };
 
             // Anonymous lambda expression, the parameters are passed into the brackets
             // types don't have to be defined.
-            handler += (hours, workType) => { return hours + 4; };
+            handler += (hours, workType) => hours + 4;
 
             // Run the delegate by calling it with the required parameters
             int i = handler(3, "manager");
@@ -46,7 +46,7 @@ namespace C_Sharp_Examples
         public class Manager
         {
             // This is the handler for the delegate, there can be many...
-            public int Manager_WorkPerformed(int hours, string workType)
+            public int ManagerWorkPerformed(int hours, string workType)
             {
                 return hours + 1;
             }
@@ -55,7 +55,7 @@ namespace C_Sharp_Examples
         public class Employee
         {
             // This is the handler for the delegate, there can be many...
-            public int Employee_WorkPerformed(int hours, string workType)
+            public int EmployeeWorkPerformed(int hours, string workType)
             {
                 return hours + 2;
             }

@@ -13,3 +13,11 @@ C:\DEVP\C_Sharp_Examples\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests
 C:\DEVP\C_Sharp_Examples\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests.dll
 C:\DEVP\C_Sharp_Examples\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests.pdb
 C:\DEVP\C_Sharp_Examples\C_Sharp_Examples_Tests\bin\Debug\System.ValueTuple.dll
+C:\DEVP\davidrbourke\C_Sharp_Examples\C_Sharp_Examples_Tests\bin\Debug\C_Sharp_Examples_Tests.dll
+C:\DEVP\davidrbourke\C_Sharp_Examples\C_Sharp_Examples_Tests\bin\Debug\C_Sharp_Examples_Tests.pdb
+C:\DEVP\davidrbourke\C_Sharp_Examples\C_Sharp_Examples_Tests\bin\Debug\C_Sharp_Examples.exe
+C:\DEVP\davidrbourke\C_Sharp_Examples\C_Sharp_Examples_Tests\bin\Debug\System.ValueTuple.dll
+C:\DEVP\davidrbourke\C_Sharp_Examples\C_Sharp_Examples_Tests\bin\Debug\C_Sharp_Examples.pdb
+C:\DEVP\davidrbourke\C_Sharp_Examples\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests.csprojResolveAssemblyReference.cache
+C:\DEVP\davidrbourke\C_Sharp_Examples\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests.dll
+C:\DEVP\davidrbourke\C_Sharp_Examples\C_Sharp_Examples_Tests\obj\Debug\C_Sharp_Examples_Tests.pdb
