@@ -13,7 +13,7 @@ namespace C_Sharp_Examples_Tests
         {
             // Arrange
             CloningExample cloning = new CloningExample();
-            var personA = new Person
+            var personA = new CloneablePerson
             {
                 PersonId = 1,
                 Email = "a@a.com",
@@ -38,7 +38,7 @@ namespace C_Sharp_Examples_Tests
         {
             // Arrange
             CloningExample cloning = new CloningExample();
-            var personA = new Person
+            var personA = new CloneablePerson
             {
                 PersonId = 1,
                 Email = "a@a.com",

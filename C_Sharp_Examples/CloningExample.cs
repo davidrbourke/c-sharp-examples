@@ -8,7 +8,7 @@ namespace C_Sharp_Examples
 {
     public class CloningExample
     {
-        public Person UseMemberCloneWise(Person personA)
+        public CloneablePerson UseMemberCloneWise(CloneablePerson personA)
         {
             var personB = personA.ShallowCopy();
 
@@ -22,9 +22,9 @@ namespace C_Sharp_Examples
             return personB;
         }
 
-        public Person DeepCopyWithICloneable(Person personA)
+        public CloneablePerson DeepCopyWithICloneable(CloneablePerson personA)
         {
-            var personB = (Person) personA.Clone();
+            var personB = (CloneablePerson) personA.Clone();
             personB.Age = 15;
 
             // The Clone implementation does a deep copy which creates a new object
@@ -35,7 +35,7 @@ namespace C_Sharp_Examples
             return personB;
         }
                 
-        public class Person : ICloneable
+        public class CloneablePerson : ICloneable
         {
             public int PersonId { get; set; }
             public string Email { get; set; }
@@ -44,16 +44,16 @@ namespace C_Sharp_Examples
 
             public object Clone()
             {
-                var clone = (Person)this.MemberwiseClone();
+                var clone = (CloneablePerson)this.MemberwiseClone();
                 clone.Address = new Address();
                 clone.Address.Street = this.Address.Street;
 
                 return clone;
             }
 
-            public Person ShallowCopy()
+            public CloneablePerson ShallowCopy()
             {
-                return (Person)this.MemberwiseClone();
+                return (CloneablePerson)this.MemberwiseClone();
             }
         }
 
