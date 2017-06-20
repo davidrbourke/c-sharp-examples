@@ -89,6 +89,19 @@ namespace C_Sharp_Examples_Tests
         }
 
         [TestMethod]
+        public void BitNot()
+        {
+            // ARRANGE
+            BitManipulation bitM = new BitManipulation();
+
+            // ACT
+            int comparedBit = bitM.NotBit(52);
+
+            // ASSERT
+            Assert.AreEqual(11, comparedBit);
+        }
+
+        [TestMethod]
         public void CountNumberOfOnesInNumber()
         {
             // ARRANGE

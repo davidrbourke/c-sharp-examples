@@ -52,6 +52,7 @@
     <Compile Include="BitManipulation.cs" />
     <Compile Include="CaseFormatter.cs" />
     <Compile Include="Concurrency.cs" />
+    <Compile Include="CloningExample.cs" />
     <Compile Include="ConstructorExamples.cs" />
     <Compile Include="CSharp6Features.cs" />
     <Compile Include="CSharp7Features.cs" />
