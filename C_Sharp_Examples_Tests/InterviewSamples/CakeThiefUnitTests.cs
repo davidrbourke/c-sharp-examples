@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using C_Sharp_Examples.InterviewSamples;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -13,17 +12,16 @@ namespace C_Sharp_Examples_Tests.InterviewSamples
         public void MaxDuffelBagValue_FullBagPossible_FullBagReturned()
         {
             // Arrange
-            IList<CakeType> cakeTypes = new List<CakeType>();
-            CakeType typeA = new CakeType(7, 160);
-            CakeType typeB = new CakeType(3, 90);
-            CakeType typeC = new CakeType(2, 15);
-            cakeTypes.Add(typeA);
-            cakeTypes.Add(typeB);
-            cakeTypes.Add(typeC);
+            CakeType[] cakeTypes =
+            {
+                new CakeType(7, 160),
+                new CakeType(3, 90),
+                new CakeType(2, 15)
+            };
 
             // Act
             CakeThief c = new CakeThief();
-            int maxValue = c.MaxDuffelBagValue(cakeTypes, 20);
+            long maxValue = c.MaxDuffelBagValue(cakeTypes, 20);
 
             // Assert
             Assert.AreEqual(555, maxValue);
@@ -33,15 +31,15 @@ namespace C_Sharp_Examples_Tests.InterviewSamples
         public void MaxDuffelBagValue_HigherValueWithLowerWeight_OptimalValueReturned()
         {
             // Arrange
-            IList<CakeType> cakeTypes = new List<CakeType>();
-            CakeType typeA = new CakeType(1, 30);
-            CakeType typeB = new CakeType(50, 200);
-            cakeTypes.Add(typeA);
-            cakeTypes.Add(typeB);
+            CakeType[] cakeTypes =
+            {
+                new CakeType(1, 30),
+                new CakeType(50, 200)
+            };
 
             // Act
             CakeThief c = new CakeThief();
-            int maxValue = c.MaxDuffelBagValue(cakeTypes, 100);
+            long maxValue = c.MaxDuffelBagValue(cakeTypes, 100);
 
             // Assert
             Assert.AreEqual(3000, maxValue);
@@ -51,15 +49,15 @@ namespace C_Sharp_Examples_Tests.InterviewSamples
         public void MaxDuffelBagValue_OptimalValueUsingOneType_OptimalValueReturned()
         {
             // Arrange
-            IList<CakeType> cakeTypes = new List<CakeType>();
-            CakeType typeA = new CakeType(3, 40);
-            CakeType typeB = new CakeType(5, 70);
-            cakeTypes.Add(typeA);
-            cakeTypes.Add(typeB);
+            CakeType[] cakeTypes =
+            {
+                new CakeType(3, 40),
+                new CakeType(5, 70)
+            };
 
             // Act
             CakeThief c = new CakeThief();
-            int maxValue = c.MaxDuffelBagValue(cakeTypes, 9);
+            long maxValue = c.MaxDuffelBagValue(cakeTypes, 9);
 
             // Assert
             Assert.AreEqual(120, maxValue);
