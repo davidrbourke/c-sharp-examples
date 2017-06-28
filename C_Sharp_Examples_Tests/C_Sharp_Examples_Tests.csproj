@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CaseFormatterTests.cs" />
+    <Compile Include="DotNetInterfaces\ConcreteIComparableTests.cs" />
     <Compile Include="EncryptionTests.cs" />
     <Compile Include="DesignPatterns\AdapterPatternTests.cs" />
     <Compile Include="DesignPatterns\TemplatePatternTests.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="DebugAssertExampleTests.cs" />
     <Compile Include="ConcurrencyTests.cs" />
     <Compile Include="CheckedUncheckedTests.cs" />
+    <Compile Include="CloningExampleTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

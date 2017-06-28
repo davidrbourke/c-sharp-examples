@@ -38,6 +38,8 @@ namespace ConsoleApplication3
             return sb.ToString();
         }
 
+        
+
         public int AndBit(int input, int comparedInput)
         {
             return input & comparedInput;
@@ -68,6 +70,11 @@ namespace ConsoleApplication3
 
             }
             return counter;
+        }
+
+        public int NotBit(int input)
+        {
+            return ~input;
         }
     }
 }

@@ -52,10 +52,12 @@
     <Compile Include="BitManipulation.cs" />
     <Compile Include="CaseFormatter.cs" />
     <Compile Include="Concurrency.cs" />
+    <Compile Include="CloningExample.cs" />
     <Compile Include="ConstructorExamples.cs" />
     <Compile Include="CSharp6Features.cs" />
     <Compile Include="CSharp7Features.cs" />
     <Compile Include="DebugAssertExample.cs" />
+    <Compile Include="DotNetInterfaces\ConcreteIComparable.cs" />
     <Compile Include="Encryption.cs" />
     <Compile Include="DelegateExample.cs" />
     <Compile Include="DesignPatterns\AdapterPattern\Duck.cs" />
